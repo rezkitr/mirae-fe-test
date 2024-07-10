@@ -67,7 +67,7 @@ const EmergencyFund = () => {
         <div className="relative h-64 md:h-72 w-[90%]">
           <Image src="/images/promo.png" alt="promo" fill />
         </div>
-        <div className="space-y-4 border-[0.5px] border-[#eff2f7] shadow-md rounded-md px-5 py-6 w-full">
+        <div className="space-y-4 border-[0.5px] border-gray-alternative shadow-md rounded-md px-5 py-6 w-full">
           <div>
             <label className="text-sm md:text-base">
               Monthly Invesment Needed
