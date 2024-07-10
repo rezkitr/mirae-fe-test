@@ -9,7 +9,8 @@ const ValueItem = ({
   max = 100,
   step = 1,
   value = 0,
-  onChange = () => {},
+  labelFormater,
+  onChange,
 }) => {
   return (
     <div className="space-y-10">
@@ -32,7 +33,7 @@ const ValueItem = ({
         step={step}
         value={value}
         onChange={onChange}
-        formatLabel={(value) => formatCurrency(value)}
+        formatLabel={labelFormater}
       />
     </div>
   )

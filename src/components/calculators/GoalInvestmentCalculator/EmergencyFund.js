@@ -35,6 +35,7 @@ const EmergencyFund = () => {
           max={1000000000}
           step={10}
           value={investTarget}
+          labelFormater={(value) => formatCurrency(value)}
           onChange={setInvestTarget}
         />
         <ValueItem
@@ -42,6 +43,7 @@ const EmergencyFund = () => {
           min={0}
           max={100}
           value={estimatedYield}
+          labelFormater={(value) => `${value}%`}
           onChange={setEstimatedYield}
         />
         <ValueItem
@@ -49,6 +51,7 @@ const EmergencyFund = () => {
           min={1}
           max={10}
           value={investPeriod}
+          labelFormater={(value) => `${value} Tahun`}
           onChange={setInvestPeriod}
         />
         <ValueItem
@@ -56,6 +59,7 @@ const EmergencyFund = () => {
           min={1}
           max={100}
           value={inflationRate}
+          labelFormater={(value) => `${value}%`}
           onChange={setInflationRate}
         />
       </div>
