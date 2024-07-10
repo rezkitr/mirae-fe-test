@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input {
+  @apply border border-gray-secondary rounded-md px-4 py-2 focus:outline-none font-bold lg:text-xl text-right;
+}
+
+.input-range {
+  .input-range__track--active {
+    @apply bg-accent-purple;
+  }
+  .input-range__slider {
+    @apply bg-white border-2 border-accent-purple rounded-none origin-center rotate-45 h-4 w-4 #{!important};
+  }
+
+  .input-range__label {
+    &.input-range__label--value {
+      .input-range__label-container {
+        @apply -top-3 text-white bg-accent-purple p-1 text-xs;
+      }
+    }
+    &.input-range__label--min {
+      .input-range__label-container {
+        @apply -left-[20%] md:-left-[30%];
+      }
+    }
+    &.input-range__label--max {
+      .input-range__label-container {
+        @apply left-[20%] md:left-[30%];
+      }
+    }
+  }
+}
