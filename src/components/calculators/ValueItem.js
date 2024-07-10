@@ -22,7 +22,7 @@ const ValueItem = ({
             type="text"
             className="w-full"
             value={value}
-            onChange={(e) => onChange(e.target.value)}
+            onChange={(e) => onChange(Number(e.target.value))}
           />
         </div>
       </div>
