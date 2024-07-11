@@ -1,4 +1,4 @@
-import { calulcatorTypeMenus } from '@/util/enum'
+import { calulcatorTypeMenus } from '@/util/config'
 import classNames from 'classnames'
 import Image from 'next/image'
 

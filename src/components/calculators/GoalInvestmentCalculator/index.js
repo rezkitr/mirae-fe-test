@@ -1,4 +1,4 @@
-import { goalInvestmentCalculatorTypes } from '@/util/enum'
+import { goalInvestmentCalculatorTypes } from '@/util/config'
 import BaseLayout from '../BaseLayout'
 import EmergencyFund from './EmergencyFund'
 
